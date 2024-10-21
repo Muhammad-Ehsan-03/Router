@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 
-function Layout (){
+function StudentLayout (){
 return(
     <div>
         <h1>I am Layout</h1>
@@ -33,4 +33,4 @@ return(
     </div>
 )
 }
-export default Layout;
+export default StudentLayout;

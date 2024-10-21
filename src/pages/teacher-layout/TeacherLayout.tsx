@@ -1,28 +1,28 @@
 import { Link, Outlet } from "react-router-dom";
 
-function Layout2 (){
+function TeacherLayout (){
     
 return (
     <div>
         <h1>I am Layout 2</h1>
         <ul>
             <li>
-                <Link to="/">
+                <Link to="">
                 Home
                 </Link>
             </li>
            <li>
-            <Link to="/other">
+            <Link to="other">
             Other1
             </Link>
            </li>
             <li>
-                <Link to="/other2">
+                <Link to="other2">
                 Other2
                 </Link>
             </li>
             <li>
-                <Link to="/other3">
+                <Link to="other3">
                 Other3
                 </Link>
             </li>
@@ -34,4 +34,4 @@ return (
     </div>
 )
 }
-export default Layout2;
+export default TeacherLayout;
