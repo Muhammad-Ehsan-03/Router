@@ -4,18 +4,16 @@ function TeacherLayout (){
     
 return (
     <div>
-        <h1>I am Layout 2</h1>
+        <h1>Teacher Portal</h1>
+        <br/>
+        <Link to="/"><button className="btn btn-success">Student Portal</button></Link>
+        <br></br>
         <ul>
             <li>
                 <Link to="">
                 Home
                 </Link>
             </li>
-           <li>
-            <Link to="other">
-            Other1
-            </Link>
-           </li>
             <li>
                 <Link to="other2">
                 Other2
@@ -28,7 +26,6 @@ return (
             </li>
         </ul>
         <div className="container2">
-        <h1>I am Layout2 Div</h1>
             <Outlet></Outlet>
         </div>
     </div>

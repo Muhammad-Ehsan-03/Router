@@ -1,15 +1,16 @@
-import { createContext, useState } from 'react';
-import StudentLayout from './pages/student-layout/StudentLayout';
 
-export const studentContext = createContext();
+import { createContext, useState } from "react";
+import TeacherLayout from "./pages/teacher-layout/TeacherLayout";
 
-function StudentConext() {
-    const [user, setUser] = useState({});
+export const teacherContext = createContext();
 
+function TeacherConext() {
+    const [user, setUser] = useState([]);
+    
     return (
-        <studentContext.Provider value={{ user, setUser }}>
-            <StudentLayout/>
-        </studentContext.Provider>
+        <teacherContext.Provider value={{ user, setUser }}>
+        <TeacherLayout></TeacherLayout>
+        </teacherContext.Provider>
     )
 }
-export default StudentConext;
+export default TeacherConext;
